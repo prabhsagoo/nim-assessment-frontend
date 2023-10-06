@@ -1,0 +1,86 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 50%;
+  height: 40rem;
+  border: 1px var(--secondary-color) solid;
+  margin: 2rem 25%;
+
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.8px);
+  -webkit-backdrop-filter: blur(2.8px);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+.form2 {
+  /* border: .2px black solid; */
+  width: 70%;
+  height: 20%;
+  margin-top: 2%;
+  margin: 2% auto;
+}
+
+.form2 h2 {
+  /* border: 1px black solid; */
+  margin-top: 1.5rem;
+  text-align: center;
+  width: auto;
+}
+
+.form3 {
+  /* border: .2px black solid; */
+  margin-top: 2%;
+  margin: 2% auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftBar {
+  width: 50%;
+  border-right: 0.1px black solid;
+}
+
+.leftBar h3 {
+  margin: 2rem 2rem;
+  font-weight: 500;
+}
+
+.rightBar {
+  width: 50%;
+  border-left: 0.1px black solid;
+}
+
+.rightBar li {
+  margin: 2rem 0.5rem;
+  font-weight: 500;
+  list-style-type: none;
+  border-bottom: 0.1px dotted black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.rightBar li h3 {
+  width: 33%;
+  font-weight: 500;
+}
+
+.rightBarHeadings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1rem 0.5rem;
+}
+
+.total {
+  bottom: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-right: 2rem;
+}
