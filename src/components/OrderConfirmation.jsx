@@ -30,7 +30,7 @@ function OrderConfirmation({ order, items }) {
             <h3>Qty</h3>
           </div>
           <ul>
-            {items.map((item, i) => (
+            {items?.map((item, i) => (
               <li>
                 <h3 style={{ paddingLeft: "7%" }}>{`${i + 1}. ${
                   item.item.name
@@ -44,12 +44,14 @@ function OrderConfirmation({ order, items }) {
             {" "}
             <h3>
               Total: $
-              {(
-                items.reduce(
-                  (total, item) => total + item.item.price * item.quantity,
-                  0
-                ) * 1.05
-              ).toFixed(2)}
+              {items !== undefined
+                ? (
+                    items.reduce(
+                      (total, item) => total + item.item.price * item.quantity,
+                      0
+                    ) * 1.05
+                  ).toFixed(2)
+                : ""}
             </h3>
           </div>
         </div>

@@ -20,9 +20,9 @@ describe("files exist", () => {
 test("renders confirmation page with name, address and items, and order id", () => {
   console.log("the test order is", testOrder);
   render(<OrderConfirmation order={testOrder} />);
-  const name = screen.getByText(/example/);
+  const name = screen.getByText(/Name/);
   const address = screen.getByText(/123 Main St/);
-  const items = screen.getByText(/Burger/);
+  const items = screen.getByText(/Item/);
   const orderId = screen.getByText(/12345/);
   expect(name).toBeInTheDocument();
   expect(address).toBeInTheDocument();

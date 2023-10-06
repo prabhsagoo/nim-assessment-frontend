@@ -45,6 +45,15 @@
   align-items: center;
   justify-content: center;
 }
+.formGroup h6 {
+  align-items: flex-start;
+  position: absolute;
+  margin-top: -18px;
+  color: red;
+  font-weight: normal;
+  visibility: hidden;
+  /* margin-top: -20px; */
+}
 
 .deliveryChoice {
   width: 100%;
